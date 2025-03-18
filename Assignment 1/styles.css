@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+    margin: 0;
+}
+
+.card {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 90%;
+    max-width: 320px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+h1, h3, p {
+    margin: 5px 0;
+    color: #333;
+}
+
+/* Social Media Icons */
+.icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 12px; /* Adjusted spacing */
+}
+
+/* If using font-based icons (e.g., Font Awesome) */
+.icons a {
+    font-size: 16px; /* Reduced icon size */
+    color: #555;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.icons a:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    color: #007bff; 
+}
+
+/* If using image-based icons */
+.icons img {
+    width: 30px;  /* Smaller icon size */
+    height: 30px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.icons img:hover {
+    transform: scale(1.1);
+}
